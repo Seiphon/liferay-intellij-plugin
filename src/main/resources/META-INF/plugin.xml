@@ -199,6 +199,7 @@
 
 		<preloadingActivity implementation="com.liferay.ide.idea.language.lsp.BladeLanguageServerPreloadingActivity" id="com.liferay.ide.idea.language.lsp.BladeLanguageServerPreloadingActivity" />
 		<completion.contributor implementationClass="org.wso2.lsp4intellij.contributors.LSPCompletionContributor" id="LSPCompletionContributor" language="any"/>
+		<externalAnnotator id="LSPAnnotator" language="Properties" implementationClass="org.wso2.lsp4intellij.contributors.annotator.LSPAnnotator"/>
 	</extensions>
 
 	<application-components>
