@@ -41,7 +41,7 @@ public class BladeLanguageServerPreloadingActivity extends PreloadingActivity {
 		if (bladeJar.exists()) {
 			IntellijLanguageClient.addServerDefinition(
 				new SocketCommandServerDefinition(
-					"properties",
+					"txt,properties",
 					new String[] {"java", "-jar", bladeJar.getAbsolutePath(), "languageServer", "-p", "12345"}, 12345));
 		}
 	}
